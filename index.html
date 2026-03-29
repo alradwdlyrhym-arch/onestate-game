@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneState Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>OneState Registration</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to OneState Game</h1>
-    </header>
-    <main>
-        <section id="registration">
-            <h2>Register</h2>
-            <form action="/submit_registration" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Register</button>
-            </form>
-        </section>
-        <section id="dashboard" style="display:none;">
-            <h2>Dashboard</h2>
-            <p>Welcome, <span id="user-name"></span></p>
-            <button id="logout">Logout</button>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <h1>Register for OneState</h1>
+    <form id="registrationForm" action="/register" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
