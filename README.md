@@ -1,1 +1,1 @@
-https://onestate.com/shop/coins
+https://github.com/alradwdlyrhym-arch/onestate-game.git
